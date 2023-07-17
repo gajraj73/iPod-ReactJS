@@ -1,0 +1,57 @@
+/* Ipod Control Container */
+#control-container{
+    background-color: transparent;
+    width: 250px;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+  }
+  
+    /* Circular-button inside the Control-container*/
+    #control-container #circular-btn{
+        position: relative;
+        display: flex;
+        border-radius: 50%;
+        background-color: white;
+        height: 100%;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        top: 17px;
+    }
+
+        /* Ok-button inside the Circular-button */
+        #circular-btn .ok-btn{
+            height: 50px;
+            width: 50px;
+            cursor: pointer;
+            border-radius: 50%;
+            background-color: gray;
+        }
+    
+        /* All Button inside the Circular-button */
+        #circular-btn button{
+            cursor: pointer;
+            position: absolute;
+            border: none;
+            background: none;
+            left:20px;
+            color: gray;
+            transform-origin: 80px;
+            transform: rotate(calc(360deg/ 4* var(--i)));
+        }
+        
+            /* Select the all svg tag inside the button */
+            #circular-btn button svg{
+                transform: rotate(calc(360deg/ -4* var(--i)));
+            }
+            
+            /* Select the all div tag inside the menu-button */
+            #circular-btn #menu-btn div{
+                transform: rotate(270deg);
+                font-weight: 600;
+                letter-spacing: 1.5px;
+                font-size: medium;
+            }

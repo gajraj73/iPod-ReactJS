@@ -1,0 +1,82 @@
+/* hide class */
+.hide{
+    display: none !important;
+  }
+
+/* Ipod Display */
+#display{
+    min-height: 250px;
+    position: relative;
+    border: outset;
+    border-radius: 14px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #4d5065;
+    width: 90%;
+    top: 32px; 
+  }
+  
+  /* Sidemenu inside the Display */
+  #display #side-menu{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100px;
+    background: rgb(38 38 52);
+    list-style: none;
+    border-radius: 8px 0 0 8px;
+  }
+
+    /* title inside the side-menu */
+    #side-menu .title {
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: .5rem;
+    }
+
+    /* listItem inside the Side-menu */
+    #side-menu li{
+        margin-top: 2px;
+        text-align: left;
+        padding: 5px 7px;
+    }
+  
+    /* Selective ListItem inside the side-menu */
+    #side-menu .active {
+        background-color: rgb(73 73 84);
+        color: white;
+        transition: 0.1s ease-out;
+    }
+  
+    /* Screen inside the Display-container */
+    #display #screen{
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    background-image: url(https://i.ytimg.com/vi/W3ZMkSl3rkU/maxresdefault.jpg);
+    background-size: cover;
+  }
+  
+    /* (Title)Heading inside the screen */
+    #screen h2{
+        text-align: center;
+        background: linear-gradient(184deg, #da4752, #ff1800);
+        border-radius: 8px 8px 0 0;
+    }
+  
+    /* image-container inside the Screen */
+    #screen .img-container{
+        min-height: 215px;
+        max-width: 223px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+        /* Item image inside the image-container */
+        .img-container img{
+            max-width: 223px;
+            width: fit-content;
+        }
